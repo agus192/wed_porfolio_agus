@@ -35,7 +35,9 @@ box-sizing: border-box;
 .hero .teks{
     width: 50%;
 }
-
+.hero ul li{
+    display: inline-block;
+}
 .hero span{
     color: lawngreen;
 }
@@ -96,12 +98,67 @@ box-sizing: border-box;
 
 }
 
+.burger .bar{
+    width: 30px;
+    height: 5px;
+    background-color: aliceblue;
+    margin-bottom: 4px;
+}
+
 
 .service .content{
     padding: 30px 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+
+.aboutme{
+    background-color: chartreuse;
+display: flex;
+align-items: center;
+justify-content: space-around;
+color: aliceblue;
+padding: 50px 5%;
+}
+
+
+/*media query */
+@media(max-width:400px) {
+
+    .navbar ul,
+    .navbar button{
+        display: none;
+        
+    }
+
+    .hero{
+        flex-wrap: wrap;
+
+        
+    }
+
+    .hero img{
+        margin-top: 20px;
+    }
+
+    .service .content{
+        flex-wrap: wrap;
+    }
+
+.service .content .card{
+    margin-top: 30px;
+}
+
+.hero .teks{
+    width: 100%;
+}
+
+.aboutme{
+    flex-wrap: wrap;
+}
+
 }
 
 
